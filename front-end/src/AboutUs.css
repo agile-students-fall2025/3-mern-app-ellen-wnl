@@ -1,0 +1,38 @@
+/*styling image to better fit the About Us page"*/
+
+.about-container {
+  max-width: 800px;
+  margin: 2rem auto; /* Center the container on the page */
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  text-align: left;
+  gap: 2rem; /* Creates space between the photo and the text */
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;  /* This prevents the image from being stretched or squished */
+  border: 4px solid #555; /* Adds a nice white border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about-text p {
+  line-height: 1.7;
+  color: #555;
+  font-size: 1.1rem;
+}
