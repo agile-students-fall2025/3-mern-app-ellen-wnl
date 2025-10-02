@@ -78,5 +78,23 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+//a route to retrive a new page
+app.get('/aboutus', (req, res) => {
+  // Define the static JSON data for the About Us page
+  const aboutData = {
+    title: "About Us",
+    
+    imageUrl: "https://imgur.com/a/L9Wde3U.jpeg",
+    paragraphs: [
+      "I am Ellen Wong, a senior at New York University with a joint major of Math and Computer Science.",
+      "This course is the very first time I use Javascript and all other relative tools and packages. It feels strange and very challenging",
+      "But this is the reason why I choose to take this class, to really learn something."
+    ]
+  };
+
+  // Send the data as a JSON response
+  res.json(aboutData);
+});
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
