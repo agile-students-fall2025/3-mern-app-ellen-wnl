@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './AboutUs.css'; // styling
+import './AboutUs.css'; 
 
 const AboutUs = () => {
   // State to hold the data fetched from the backend
