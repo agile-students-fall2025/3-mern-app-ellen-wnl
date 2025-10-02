@@ -16,7 +16,7 @@ const AboutUs = () => {
       try {
         // We ask our backend for the data at the '/about' endpoint
         // Note: Make sure you have a proxy in package.json or use the full URL
-        const response = await axios.get('http://localhost:3000/aboutus');
+        const response = await axios.get('http://localhost:5002/aboutus');
         setAboutData(response.data); // Store the received data in our state
       } catch (error) {
         console.error("There was an error fetching the About Us data:", error);
