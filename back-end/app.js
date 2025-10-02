@@ -84,7 +84,7 @@ app.get('/aboutus', (req, res) => {
   const aboutData = {
     title: "About Us",
     
-    imageUrl: "https://imgur.com/a/L9Wde3U.jpeg",
+    imageUrl: "https://i.imgur.com/AE5W467.jpeg", //use direct image url
     paragraphs: [
       "I am Ellen Wong, a senior at New York University with a joint major of Math and Computer Science.",
       "This course is the very first time I use Javascript and all other relative tools and packages. It feels strange and very challenging",
